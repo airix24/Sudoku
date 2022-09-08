@@ -1,5 +1,7 @@
 # Sudoku
 
-this is the best sudoku game ever made
+this is an old project
+
+it is the best sudoku game ever made
 
 good luck
