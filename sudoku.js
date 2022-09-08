@@ -131,7 +131,6 @@ function checkWin() {
     cells.forEach(function (cell) {
         if (isEmpty(cell)) {
             check++;
-            //console.log('this one\'s empty. i am fatter than hell')
         }
     })
     if (check === 0) {
