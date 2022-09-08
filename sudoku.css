@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(70deg, rgb(141, 247, 255), rgb(143, 57, 255), rgb(141, 247, 255));
+    align-items: center;
+    justify-items: center;
+    font-family: monospace;
+}
+
+.title {
+    color: azure;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    /*height: 500px;
+    width: 500px;*/
+
+    border-style: solid;
+    border-width: 3px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-style: solid;
+    border-width: 3px;
+}
+
+.cell {
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: azure;
+    height: 45px;
+    width: 45px;
+    overflow-wrap: anywhere;
+}
+
+.cell:hover {
+    background-color: rgb(220, 255, 255);
+    transform: scale(1.05);
+}
+
+.timer {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.timer-div {
+    background-color: azure;
+    padding: 10px;
+    border: solid;
+    border-radius: 50%;
+    height: 25px;
+}
+
+.notes-button {
+    margin: 15px;
+    border: solid;
+    border-radius: 5px;
+    background-color: azure;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.notes-button:hover {
+    background-color: rgb(231, 231, 231);
+    transform: scale(1.1);
+}
+
+.notes-button.on {
+    background-color:rgb(175, 251, 255);
+    /*color: azure;*/
+    border-color: black;
+}
+
+.notes-button.on:hover {
+    background-color: rgb(204, 253, 253);
+    transform: scale(1.03);
+}
+
+.win-screen {
+    display: grid;
+    background: hsla(88, 100%, 50%, 0.7);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    /* hide this modal until we need it */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 1s;
+}
+
+.win-screen.open {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.winner {
+    color: azure;
+    font-size: 50px;
+    text-align: center;
+}
+
+.play-again {
+    color:rgb(40, 123, 201);
+    font-size: 26px;
+}
+
+.mistakes-div {
+    width: 100px;
+}
+
+.counter {
+    color: azure;
+}
+
+.cell.selected {
+    background-color: rgb(150, 255, 255);
+}
+
+.cell.wrong {
+    color: red;
+}
+
+.cell.notes {
+    font-size: 15px;
+    color: rgb(126, 126, 126)
+}
+
+
+/*
+.anim {
+    animation-name: title-anim;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes title-anim {
+    100% {
+        transform: rotate3d(2, 10.0, 1.0, 360deg);
+    }
+}
+*/
